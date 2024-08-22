@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <!-- Bootstrap CSS -->
+    <!-- Link para o arquivo CSS do Bootstrap para estilização e responsividade -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="bg-light py-3">
+        <div class="container">
+            <!-- Logotipo do hotel -->
+            <img src="logo.png" alt="Logo do Hotel" class="img-fluid">
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="container my-4">
+        <!-- Seção de banner -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Caixa com informações sobre o hotel -->
+                <div class="p-4 bg-light">
+                    <h1>Sinta o conforto acolhedor de nossas hospedagens</h1>
+                    <p>Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00.</p>
+                    <!-- Botão para saber mais -->
+                    <a href="#" class="btn btn-primary">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Imagem do hotel -->
+                <img src="banner.jpg" alt="Imagem do Hotel" class="img-fluid">
+            </div>
+        </div>
+
+        <!-- Seção de razões para se hospedar no hotel -->
+        <div class="row text-center my-5">
+            <h2>Por que se hospedar em nossos hotéis?</h2>
+            <div class="col-md-6">
+                <!-- Ícone de xícara e descrição -->
+                <i class="bi bi-cup-fill fs-1"></i>
+                <p class="mt-2"><strong>Delicioso café da manhã</strong><br>Incluído em todas as diárias</p>
+            </div>
+            <div class="col-md-6">
+                <!-- Ícone de localização e descrição -->
+                <i class="bi bi-geo-alt-fill fs-1"></i>
+                <p class="mt-2"><strong>Fácil acesso</strong><br>Perto dos principais pontos turísticos</p>
+            </div>
+        </div>
+
+        <!-- Seção de quartos -->
+        <div class="row text-center my-5">
+            <h2>Nossos Quartos</h2>
+            <div class="col-md-4">
+                <div class="p-3 bg-light">
+                    <!-- Imagem da Suíte Solteiro -->
+                    <img src="suite-solteiro.jpg" alt="Suíte Solteiro" class="img-fluid mb-2">
+                    <h3>Suíte Solteiro</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-light">
+                    <!-- Imagem da Suíte Casal -->
+                    <img src="suite-casal.jpg" alt="Suíte Casal" class="img-fluid mb-2">
+                    <h3>Suíte Casal</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3 bg-light">
+                    <!-- Imagem da Suíte Master -->
+                    <img src="suite-master.jpg" alt="Suíte Master" class="img-fluid mb-2">
+                    <h3>Suíte Master</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de reserva -->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Instruções de reserva à esquerda -->
+                <div class="p-4 bg-light h-100">
+                    <h2>Faça sua reserva</h2>
+                    <p>Entre em contato conosco informando as datas desejadas. Lhe retornaremos informando a
+                        disponibilidade e repassando detalhes da reserva.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Formulário de reserva à direita -->
+                <div class="p-4 bg-light h-100">
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Nome">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" class="form-control" placeholder="Data de entrada">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" class="form-control" placeholder="Data de saída">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" rows="3" placeholder="Observações"></textarea>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="number" class="form-control" placeholder="Adultos">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="number" class="form-control" placeholder="Crianças">
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Hotel. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <!-- Link para o arquivo JS do Bootstrap para funcionalidades interativas -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
