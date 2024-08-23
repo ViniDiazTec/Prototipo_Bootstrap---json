@@ -1,4 +1,15 @@
-/* Estilos personalizados podem ser adicionados aqui */
+
+/* Importação da fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo para o texto do cabeçalho */
+.header-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Fonte em negrito */
+    font-size: 1.5rem; /* Tamanho da fonte */
+}
+
+
 body {
     font-family: Arial, sans-serif;
 }
