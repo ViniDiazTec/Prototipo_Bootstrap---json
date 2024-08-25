@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container my-4">
+        <h1 class="text-center">Reservas</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Data de Entrada</th>
+                    <th>Data de Saída</th>
+                    <th>Observações</th>
+                    <th>Adultos</th>
+                    <th>Crianças</th>
+                </tr>
+            </thead>
+            <tbody id="reservas-tabela">
+                <!-- As reservas serão inseridas aqui -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript para preencher a tabela -->
+    <script>
+        fetch('http://localhost:3000/reservas')
+            .then(response => response.json())
+            .then(data => {
+                const tabela = document.getElementById('reservas-tabela');
+                data.forEach(reserva => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${reserva.nome}</td>
+                        <td>${reserva.email}</td>
+                        <td>${reserva.dataEntrada}</td>
+                        <td>${reserva.dataSaida}</td>
+                        <td>${reserva.observacoes}</td>
+                        <td>${reserva.adultos}</td>
+                        <td>${reserva.criancas}</td>
+                    `;
+                    tabela.appendChild(row);
+                });
+            })
+            .catch(error => {
+                console.error('Erro ao carregar reservas:', error);
+            });
+    </script>
+</body>
+
+</html>

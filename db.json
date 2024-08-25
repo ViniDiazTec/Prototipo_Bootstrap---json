@@ -1,0 +1,34 @@
+{
+  "reservas": [
+    {
+      "id": "737c",
+      "nome": null,
+      "email": null,
+      "dataEntrada": null,
+      "dataSaida": null,
+      "observacoes": null,
+      "adultos": null,
+      "criancas": null
+    },
+    {
+      "id": "5d69",
+      "nome": null,
+      "email": null,
+      "dataEntrada": null,
+      "dataSaida": null,
+      "observacoes": null,
+      "adultos": null,
+      "criancas": null
+    },
+    {
+      "id": "e077",
+      "nome": "carloada",
+      "email": "sadsadas@gmail.com",
+      "dataEntrada": "2024-08-25",
+      "dataSaida": "2024-08-26",
+      "observacoes": "weqrewqr",
+      "adultos": 1,
+      "criancas": 2
+    }
+  ]
+}
